@@ -1,4 +1,5 @@
 // 入力フォームのサンプルです
+// https://codesandbox.io/s/form-sample-c1rmr?file=/src/App.js
 
 import React, { useState } from "react";
 import "./styles.css";
