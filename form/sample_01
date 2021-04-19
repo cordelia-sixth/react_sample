@@ -1,0 +1,29 @@
+// 入力フォームのサンプルです
+
+import React, { useState } from "react";
+import "./styles.css";
+
+export const App = () => {
+  const [text, setText] = useState("");
+
+  const handleSubmit = event => {
+    
+    event.preventDefault();
+  };
+
+  const handleChange = event => {
+    setText(event.target.value);
+    console.log(text);
+  };
+
+  return (
+    <div className="App">
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="enter text" onChange={handleChange} />
+        <input type="submit" value="submit" />
+      </form>
+
+      <p>{text}</p>
+    </div>
+  );
+};
